@@ -12,7 +12,7 @@ print.catter_a <- function(x) {
   invisible(x)
 }
 
-#' Construct a catter_a class
+#' Construct a catter_b class
 #' @export
 catter_b <- function(x) {
   class(x) <- "catter_b"
@@ -26,3 +26,17 @@ print.catter_b <- function(x) {
 }
 
 .S3method("print", "catter_b", print.catter_b) # It looks like methods are not limited to generic.class calls
+
+#' Construct a catter_c class
+#' @export
+catter_c <- function(x) {
+  class(x) <- "catter_c"
+  x
+}
+
+#' Print catter class (this one exported)
+#' @export
+print.catter_c <- function(x) {
+  cat(x)
+  invisible(x)
+}
