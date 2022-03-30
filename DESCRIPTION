@@ -1,0 +1,16 @@
+Package: catterpoc
+Type: Package
+Title: A catter class
+Version: 0.1.0
+Author: Magnus Thor Torfason <m@zulutime.net>
+Maintainer: Magnus Thor Torfason <m@zulutime.net>
+Description: Test package (proof of concept) for behavior of import
+    package for S3 methods. Installation not recommended except to 
+    test that behavior.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: 
+    import,
+    testthat
