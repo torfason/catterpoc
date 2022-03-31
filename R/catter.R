@@ -40,3 +40,38 @@ print.catter_c <- function(x) {
   cat(x)
   invisible(x)
 }
+
+#' This is not a method
+#' @export
+some.period <- function(a, b, c) {
+  NULL
+}
+
+#' This is not a method
+#' @export
+some_b.period_b <- function(a, b, c) {
+  NULL
+}
+
+#' This could be a constructor
+#' @export
+period_b <- function() {
+  NULL
+}
+
+#' Not a method
+#' @export
+b.test.period_b <- function(a, b, c) {
+  NULL
+}
+
+#' A method
+#'
+#' Note that if this method were exported with a regular export tag, roxygen
+#' would misdiagnose it as method t on class test.catter_a (because t exists as
+#' a generic).
+#'
+#' @exportS3Method t.test catter_a
+t.test.catter_a <- function(a, b, c) {
+  NULL
+}
