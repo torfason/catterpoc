@@ -6,7 +6,8 @@ Author: Magnus Thor Torfason <m@zulutime.net>
 Maintainer: Magnus Thor Torfason <m@zulutime.net>
 Description: Test package (proof of concept) for behavior of import
     package for S3 methods. Installation not recommended except to 
-    test that behavior.
+    test that behavior. Minor changes to the package can be coded
+    directly on github.dev.
 License: MIT
 Encoding: UTF-8
 LazyData: true
